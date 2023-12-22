@@ -68,3 +68,62 @@ for value in numbers:
         print(f"{value}rd")
     else:
         print(f"{value}th") """
+
+#alien game
+
+""" alien1 = ['green']
+alien2 = ['yellow']
+alien3 = ['red']
+
+if 'green' in alien1:
+    print("The alien you just killed is worth 5 points!")
+elif 'yellow' in alien1:
+    print("The alien you just killed is worth 10 points!")
+elif 'red' in alien1:
+    print("The alien you just killed is worth 15 points!")
+
+if 'green' in alien2:
+    print("The alien you just killed is worth 5 points!")
+elif 'yellow' in alien2:
+    print("The alien you just killed is worth 10 points!")
+elif 'red' in alien2:
+    print("The alien you just killed is worth 15 points!")
+
+if 'green' in alien3:
+    print("The alien you just killed is worth 5 points!")
+elif 'yellow' in alien3:
+    print("The alien you just killed is worth 10 points!")
+elif 'red' in alien3:
+    print("The alien you just killed is worth 15 points!") """
+
+""" age = 32
+
+if age < 2:
+    print(f"This person is {age} years old, they are a baby.")
+elif age <= 4:
+    print(f"This person is {age} years old, they are a toddler.")
+elif age <= 13:
+    print(f"This person is {age} years old, they are a kid.")
+elif age <= 20:
+    print(f"This person is {age} years old, they are a teenager.")
+elif age < 65:
+    print(f"This person is {age} years old, they are an adult. (Theoretically)")
+elif age >= 65:
+    print(f"This person is {age} years old, they are aan elder.") """
+
+""" favorite_fruits = ['mango', 'apple', 'cherry']
+
+if 'bannana' in favorite_fruits:
+    print("Wow, you really like bannanas!")
+    
+if 'cherry' in favorite_fruits:
+    print("Wow, you really like cherries!")
+
+if 'mango' in favorite_fruits:
+    print("Wow, you really like mangos!")
+
+if 'apple' in favorite_fruits:
+    print("Wow, you really like apples!")
+
+if 'guava' in favorite_fruits:
+    print("Wow, you really like guavas!") """
