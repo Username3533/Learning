@@ -1,4 +1,4 @@
-#work with lists
+#work with lists #review
 
 """ friends_names = ['richard', 'justin', 'tony']
 print(type(friends_names))
