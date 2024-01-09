@@ -1,6 +1,6 @@
 #Fun with functions
 
-def Hello():
+""" def Hello():
   print('Hello World!')
 
 Hello()
@@ -18,4 +18,13 @@ message()
 def favorite_book(title):
   print(f'One of my favorite books is {title.title()}!')
 
-favorite_book('gone with the wind')
+favorite_book('gone with the wind') """
+
+""" def make_shirt(size = 'large', text = 'I love Python'):
+    print(f'Your {size} shirt will read "{text}"!')
+
+make_shirt('large', 'Big Whoop, wanna fight about it?')
+make_shirt(size = 'extra medium', text = 'Cool Story Bro')
+make_shirt() """
+
+
