@@ -28,3 +28,10 @@ make_shirt(size = 'extra medium', text = 'Cool Story Bro')
 make_shirt() """
 
 
+def make_album(artist, album_name, numoftracks = None):
+    album = {'artist' : artist, 'album name' : album_name, 'number of tracks' : numoftracks}
+    return album
+
+print(make_album('Linkin Park', 'Meteora', 13))
+
+
