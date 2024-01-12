@@ -23,12 +23,13 @@ gooddog.sit()
 gooddog.rollover()
 print(f'{gooddog.name}, whos a good puppy?') """
 
-""" class Restaurant:
-    Making a restaurant
+class Restaurant:
+    """ Making a restaurant """
 
     def __init__(self, name, cousine):
         self.name = name
         self.cousine = cousine
+        self.number_served = 0
 
     def describe_restaurant(self):
         print(f'{self.name} is a new restaurant that serves {self.cousine}!')
@@ -36,13 +37,40 @@ print(f'{gooddog.name}, whos a good puppy?') """
     def open_restaurant(self):
         print(f'{self.name} is now open and proudly serving {self.cousine} food!')
 
-Asian_infusion = Restaurant('Asiafu', 'Asian Infusion')
+    def read_guests(self):
+        print(f'{self.number_served} guests have been served.')
+
+    def set_number_served(self, happy_guests):
+        if happy_guests >= self.number_served:
+            self.number_served = happy_guests
+        else:
+            print('You cant go back in time and served less people.')     
+
+    def increment_number_served(self, new_customers):
+        self.number_served += new_customers
+        
+
+""" Asian_infusion = Restaurant('Asiafu', 'Asian Infusion')
 Asian_infusion.describe_restaurant()
-Asian_infusion.open_restaurant()
+Asian_infusion.open_restaurant() """
 
 continental = Restaurant('Continental', 'Continental')
 continental.describe_restaurant()
-continental.open_restaurant() """
+continental.open_restaurant()
+
+continental.set_number_served(20)
+continental.read_guests()
+continental.increment_number_served(15)
+continental.read_guests()
+
+
+
+
+
+
+
+
+
 
 """ class User:
     
