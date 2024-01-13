@@ -1,4 +1,4 @@
-#working with classes #review
+#working with classes
 
 """ class Dog:
     Making a dog
@@ -23,8 +23,7 @@ gooddog.sit()
 gooddog.rollover()
 print(f'{gooddog.name}, whos a good puppy?') """
 
-class Restaurant:
-    """ Making a restaurant """
+""" class Restaurant:
 
     def __init__(self, name, cousine):
         self.name = name
@@ -50,9 +49,24 @@ class Restaurant:
         self.number_served += new_customers
         
 
+class Ice_Cream_Stand(Restaurant):
+
+    def __init__(self):
+        self.flavors = ['Cherry', 'Chocolate', 'Strawberrry', 'Chocolate Chip', 'Mint']
+
+    def get_flavors(self):
+        for flavor in self.flavors:
+            print(f'The available flavors include {flavor}.')
+
+basic_ice_stand = Ice_Cream_Stand()
+
+basic_ice_stand.get_flavors()
+basic_ice_stand.set_number_served(20)
+basic_ice_stand.read_guests() """
+
 """ Asian_infusion = Restaurant('Asiafu', 'Asian Infusion')
 Asian_infusion.describe_restaurant()
-Asian_infusion.open_restaurant() """
+Asian_infusion.open_restaurant()
 
 continental = Restaurant('Continental', 'Continental')
 continental.describe_restaurant()
@@ -61,7 +75,7 @@ continental.open_restaurant()
 continental.set_number_served(20)
 continental.read_guests()
 continental.increment_number_served(15)
-continental.read_guests()
+continental.read_guests() """
 
 
 
