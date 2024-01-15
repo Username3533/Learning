@@ -62,5 +62,23 @@ with open(filename, 'a') as file:
             file.write(message)
             file.write('\n') """
 
+""" print('Enter two numbers and they will be added together. Type "q" to quit.')
+
+active = True
+while active == True:
+    num1 = input('Please enter your first number: ')
+    num2 = input('Please enter your second number: ')
+
+    if num1 == 'q':
+        break
+    elif num2 == 'q':
+        break
+    try:
+        sum = int(num1) + int(num2)
+    except ValueError:
+        print('Please only enter numbers.')
+    else:
+        print(f'{num1} plus {num2} is equal to: {sum}') """
+
 
 
