@@ -1,4 +1,6 @@
 #Ch10 - Files and Exceptions
+import json
+
 
 """ with open('pi_million_digits.txt') as file_object:
     contents = file_object.readlines()
@@ -82,3 +84,18 @@ while active == True:
 
 
 
+filename = 'favnum.json'
+
+def asknum():
+    with open(filename, 'w') as f:
+        favnum = input('What is your fav number? ')
+        json.dump(favnum, f)
+
+
+
+def recallnum():
+    with open(filename, 'r') as f:
+        favnum = json.load(f)
+        print(f'That is correct, your favorite number is {favnum}!')
+
+recallnum()
