@@ -66,14 +66,13 @@ with open(filename, 'a') as file:
 
 """ print('Enter two numbers and they will be added together. Type "q" to quit.')
 
-active = True
-while active == True:
-    num1 = input('Please enter your first number: ')
-    num2 = input('Please enter your second number: ')
 
+while True:
+    num1 = input('Please enter your first number: ')
     if num1 == 'q':
         break
-    elif num2 == 'q':
+    num2 = input('Please enter your second number: ')    
+    if num2 == 'q':
         break
     try:
         sum = int(num1) + int(num2)
