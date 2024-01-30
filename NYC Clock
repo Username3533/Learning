@@ -1,0 +1,30 @@
+from datetime import datetime
+import pytz
+import tkinter as tk
+
+def display_clock():
+    ny_tz = pytz.timezone('America/New_York')
+
+    def update_time():
+        current_time = datetime.now(ny_tz).strftime('%I:%M:%S %p')
+        label.config(text=current_time)
+        label.after(1000, update_time)
+
+    root = tk.Tk()
+    root.title("New York Time")
+    
+    screen_width = root.winfo_screenwidth()
+    screen_height = root.winfo_screenheight()
+    window_width = 500
+    window_height = 300
+    
+    x_coordinate = (screen_width - window_width) / 2
+    y_coordinate = (screen_height - window_height) / 2
+
+    root.geometry(f'{window_width}x{window_height}+{int(x_coordinate)}+{int(y_coordinate)}')
+    label = tk.Label(root, font=('calibri', 40, 'bold'), background='black', foreground='white')
+    label.pack()
+    update_time()
+    root.mainloop()
+
+display_clock()
