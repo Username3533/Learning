@@ -1,4 +1,4 @@
-#working with user inputs #review2
+#working with user inputs #review
 
 #parrot
 """ parrot = input('Tell me something and I will repeat it: ')
