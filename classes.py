@@ -79,13 +79,6 @@ continental.read_guests() """
 
 
 
-
-
-
-
-
-
-
 """ class User:
     
     def __init__(self, user_name, age, sex, hobby):
