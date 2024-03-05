@@ -1,7 +1,7 @@
 """ Basic python exercises """
 import math
 
-#Calculate area of a circle using input and checking if input is valid
+#Calculate area of a circle using input after checking if input is valid
 def circle_area():
     radius = input('What is the radius of the circle? ')
     try:
