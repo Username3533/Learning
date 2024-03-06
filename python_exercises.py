@@ -46,3 +46,11 @@ import math
 
 # convert_temp()
 
+# def multiples():
+#     number = int(input('Enter a number: '))
+#     multiples = []
+#     for i in range(1, 11):
+#         multiples.append(number * i)
+#     print(multiples)
+
+# multiples()
