@@ -1,8 +1,9 @@
 """ Basic python exercises """
 import math
 
-#Calculate area of a circle using input after checking if input is valid
+
 # def circle_area():
+#     """ Calculate area of a circle using input after checking if input is valid """
 #     radius = input('What is the radius of the circle? ')
 #     try:
 #         radius = float(radius)
@@ -17,7 +18,6 @@ import math
 
 #Count the number of times a word appears in a string
 # string = "What are you doing today? I hope you are going to the store today?"
-
 # word_count = {}
 
 # for word in string.lower().split():
@@ -28,8 +28,9 @@ import math
         
 # print('Word count: \n', word_count)
 
-#Convert Cecius to Fahrenheit or vice versa
+
 # def convert_temp():
+#     """ Convert Cecius to Fahrenheit or vice versa """
 #     try:
 #         unit_of_measure = input('What is the current temperature measured in (C or F)? ')
 #         temp = float(input('What is the temperature? '))
@@ -46,7 +47,10 @@ import math
 
 # convert_temp()
 
+
+
 # def multiples():
+#     """ Creates list of first ten multiples of input number """
 #     number = int(input('Enter a number: '))
 #     multiples = []
 #     for i in range(1, 11):
@@ -54,3 +58,23 @@ import math
 #     print(multiples)
 
 # multiples()
+
+# def calc_interest():
+#     """ Calculates simple interets """
+#     try:
+#         principal = float(input('Enter principal amount: '))
+#         rate = float(input('Enter interest rate: '))
+#         years = float(input('Enter number of years: '))
+        
+#         interest = principal * rate * years / 100
+#         total_amount = principal + interest
+#         monthly = total_amount / (years * 12)
+
+#         print(f'The simple interest is: {interest:.2f}')
+#         print(f'The total amount is: {total_amount:.2f}')
+#         print(f'The monthly payments are: {monthly:.2f}')
+
+#     except ValueError:
+#         print('Enter valid fields.')
+
+# calc_interest()
