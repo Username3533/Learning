@@ -78,3 +78,35 @@ import math
 #         print('Enter valid fields.')
 
 # calc_interest()
+
+# def fib_seq(n):
+#     """ Calculate fibonacci sequence to n """
+#     sequence = [0, 1]
+    
+#     for i in range(2, n):
+#         sequence.append((sequence[-1]) + (sequence[-2]))
+#     return sequence[:n]
+
+# n = int(input('Enter the number of Fibs to generate: '))
+# fib_nums = fib_seq(n)
+
+# print(f'The first {n} nunbers of the fibonacci sequence are: {fib_nums}')
+
+# year = int(input('Enter the year you wish to check if it is a leapyear: '))
+
+# if year % 4 == 0:
+#     print(f'{year} is a leap year.')
+# else:
+#     print(f'{year} is not a leap year, sorry.')
+
+number = int(input('What number would you like to check the prime status of? '))
+
+
+for i in range(1, number):
+    container = []
+    if number % i == 0:
+        container.append(i)
+        if len(container) > 1:
+            print(f'{number} is not a prime number.')
+        if len(container) <= 1:
+            print(f'{number} is a prime number.')
