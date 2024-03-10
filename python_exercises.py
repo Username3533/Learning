@@ -99,14 +99,16 @@ import math
 # else:
 #     print(f'{year} is not a leap year, sorry.')
 
-number = int(input('What number would you like to check the prime status of? '))
+# number = int(input('What number would you like to check the prime status of? '))
 
+# def chk_prime(number):
+#     """ Check the prime status of a number """
+#     for i in range(2, number):
+#         if number % i == 0:
+#             return False
+#     return True
 
-for i in range(1, number):
-    container = []
-    if number % i == 0:
-        container.append(i)
-        if len(container) > 1:
-            print(f'{number} is not a prime number.')
-        if len(container) <= 1:
-            print(f'{number} is a prime number.')
+# if chk_prime(number):
+#     print(f'{number} is prime.')
+# else:
+#     print(f'{number} is not prime.')
