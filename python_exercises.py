@@ -154,3 +154,15 @@ import math
 #         print('Enter a whole number.')
 
 # sum_of_digits()
+
+#Modular sum of digits
+# def sum_of_digits(number):
+#     """ Modular version of finding the sum of digits """
+#     try:
+#         total = sum(int(digit) for digit in str(number))
+#         print(total)
+#     except ValueError:
+#         print('Enter a whole number.')
+
+# number = input('Please enter a number: ')
+# sum_of_digits(number)
