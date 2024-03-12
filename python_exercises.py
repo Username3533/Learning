@@ -112,3 +112,33 @@ import math
 #     print(f'{number} is prime.')
 # else:
 #     print(f'{number} is not prime.')
+
+# def char_chk():
+#     sample_str = input('Enter your string: ').lower()
+#     vowels = 'aeiou'
+#     similar = {}
+
+#     for char in sample_str:
+#         if char in vowels:
+#             if char in similar:
+#                 similar[char] += 1
+#             else:
+#                 similar[char] = 1
+
+#     print(similar)
+
+# char_chk()
+
+# def factoral():
+#     factorial_result = 1
+#     try:
+#         number = int(input('Enter a number: '))
+#         for i in range(1, number + 1):
+#             factorial_result *= i
+#         print(factorial_result)
+#     except ValueError:
+#         print('Enter a whole number.')
+
+# factoral()
+
+
