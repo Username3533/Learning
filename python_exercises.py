@@ -114,6 +114,7 @@ import math
 #     print(f'{number} is not prime.')
 
 # def char_chk():
+#     """ Count number of occurances of a character in a string """
 #     sample_str = input('Enter your string: ').lower()
 #     vowels = 'aeiou'
 #     similar = {}
@@ -129,7 +130,8 @@ import math
 
 # char_chk()
 
-# def factoral():
+# def factorial():
+#     """ Find the factorial of a number """
 #     factorial_result = 1
 #     try:
 #         number = int(input('Enter a number: '))
@@ -139,6 +141,16 @@ import math
 #     except ValueError:
 #         print('Enter a whole number.')
 
-# factoral()
+# factorial()
 
 
+# def sum_of_digits():
+#     """ Find sum of digits """
+#     try:
+#         number = input('Enter a number: ')
+#         total = sum(int(digit) for digit in str(number))
+#         print(total)
+#     except ValueError:
+#         print('Enter a whole number.')
+
+# sum_of_digits()
