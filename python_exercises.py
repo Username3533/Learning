@@ -166,3 +166,31 @@ import math
 
 # number = input('Please enter a number: ')
 # sum_of_digits(number)
+
+# def cesar_cipher(text, shift):
+#     """ Basic Cesar Cipher, converts letters to unicode, shifts them, and returns encoded string """
+#     encrypted_message = []
+
+#     for char in text:
+#         if char.isalpha():
+#             shift_amount = shift % 26
+#             new_ord = ord(char) + shift_amount
+
+#             if char.islower():
+#                 if new_ord > ord('z'):
+#                     new_ord -= 26
+#             else:
+#                 if new_ord > ord('Z'):
+#                     new_ord -= 26
+
+#             encrypted_message.append(chr(new_ord))
+#         else:
+#             encrypted_message.append(char)
+
+#     return "".join(encrypted_message)
+
+# text = input('What message would you like to encrypt? ')
+# shift = int(input('Cipher shift amount: '))
+
+# encoded_text = cesar_cipher(text, shift)
+# print(f'{encoded_text}')
