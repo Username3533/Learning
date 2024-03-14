@@ -252,3 +252,12 @@ import math
     
 # print(squared_nums)
 # print(cubed_nums)
+
+# def distance(x1, y1, x2, y2):
+#     return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+# x1, y1 = map(float, input('Enter the coordinates of the first poiont (x1, y1): ').split())
+# x2, y2 = map(float, input('Enter the coodrdinates of the second point (x2, y2): ').split())
+
+# result = distance(x1, y1, x2, y2)
+# print(f'The distance between the two points is: {result:.2f}')
