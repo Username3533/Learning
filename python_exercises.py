@@ -241,3 +241,14 @@ import math
 # unique = list(dict.fromkeys(input_list))
 # print(f'{unique}')
 
+
+# """ Create, square and cube a list using comprehension """
+# range_size = int(input('Enter a whole number: '))
+# numbers = [1 * num for num in range(1, range_size + 1)]
+
+# print(numbers)
+# squared_nums = [num **2 for num in numbers]
+# cubed_nums = [num ** 3 for num in numbers]
+    
+# print(squared_nums)
+# print(cubed_nums)
