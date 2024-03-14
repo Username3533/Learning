@@ -194,3 +194,50 @@ import math
 
 # encoded_text = cesar_cipher(text, shift)
 # print(f'{encoded_text}')
+
+
+
+# def find_longest_word(words):
+#     """ Find the longest word in a string """
+#     longest_word = ""
+#     max_length = 0
+
+#     for word in words:
+#         if len(word) > max_length:
+#             max_length = len(word)
+#             longest_word = word
+    
+#     print(f'The longest word is: {longest_word}')
+
+# input_sentence = input('Enter a sentence: ')
+# words = input_sentence.split()
+
+# find_longest_word(words)
+
+
+# """ Avg numbers in a lsit """
+# numbers = [float(x) for x in input('Enter a list of numbers: ').split()]
+
+# avg = sum(numbers) / len(numbers)
+# print(f'The average of the numbers given is: {avg:.2f}')
+
+# """ Converts lists to sets and compares them """
+# list1 = input('Enter a list of numbers: ').split()
+# list2 = input('Enter a second list of numbers: ').split()
+
+# common = set(list1) & set(list2)
+# print(f'Common numbers are: {common}')
+
+# list_of_nums = input('Enter a list of numbers: ').split()
+
+# max = max(list_of_nums)
+# min = min(list_of_nums)
+
+# print(f'Max is {max}')
+# print(f'Min is {min}')
+
+# """ Remove duplicates from list and print unique items """
+# input_list = input('Enter a list of elements: ').split()
+# unique = list(dict.fromkeys(input_list))
+# print(f'{unique}')
+
