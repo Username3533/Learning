@@ -46,3 +46,5 @@ Learning to code. :)
 - POS tagging/Tokenization/Stemming
 - Flask framework, dev, integration and APIs
 - Webscraping
+
+# Advanced Concepts
