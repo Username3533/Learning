@@ -50,3 +50,4 @@ Learning to code. :)
 # Advanced Concepts
 - Scikit-Learn
 - File Parsing
+- Computer Vision
