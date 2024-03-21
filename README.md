@@ -51,3 +51,4 @@ Learning to code. :)
 - Scikit-Learn
 - File Parsing
 - Computer Vision
+- CSV file I/O
