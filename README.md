@@ -52,3 +52,4 @@ Learning to code. :)
 - File Parsing
 - Computer Vision
 - CSV file I/O
+- Cross validation
