@@ -49,6 +49,7 @@ Learning to code. :)
 
 # Advanced Concepts
 - Scikit-Learn
+- ARIMA model
 - File Parsing
 - Computer Vision
 - CSV file I/O
