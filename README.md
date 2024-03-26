@@ -56,3 +56,4 @@ Learning to code. :)
 - CSV file I/O
 - Cross validation
 - Apache Spark
+- Collaborative Filtering
