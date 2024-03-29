@@ -57,3 +57,4 @@ Learning to code. :)
 - Cross validation
 - Apache Spark
 - Collaborative Filtering
+- Client Server Architechture
