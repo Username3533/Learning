@@ -59,3 +59,4 @@ Learning to code. :)
 - Collaborative Filtering
 - Client Server Architechture
 - Database Interaction
+- Convolutional neural networks and image recognition
