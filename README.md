@@ -58,5 +58,5 @@ Learning to code. :)
 - Apache Spark
 - Collaborative Filtering
 - Client Server Architechture
-- Database Interaction
+- Database Interaction/Programming
 - Data extraction from websites
