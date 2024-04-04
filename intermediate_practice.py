@@ -36,6 +36,8 @@ import asyncio
 import argparse
 import sqlite3
 import pandas
+import numpy as np
+from cryptography.fernet import Fernet
 from selenium import webdriver
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
@@ -169,3 +171,91 @@ from keras.utils import to_categorical
 # print(a)
 # print(b)
 # print(d)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Tables and Data """
+
+# conn = sqlite3.connect('table.db')
+# c = conn.cursor()
+
+# c.execute('''CREATE TABLE users (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)''')
+
+# c.execute("INSERT INTO users VALUES (1, 'John', 30)")
+# c.execute("INSERT INTO users VALUES (2, 'Jane', 25)")
+
+# conn.commit()
+# conn.close()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# import matplotlib.pyplot as plt
+
+# Connect to the SQLite database
+# conn = sqlite3.connect('table.db')
+# cursor = conn.cursor()
+
+# # Execute SQL query to retrieve data
+# cursor.execute("SELECT name, age FROM users")
+# rows = cursor.fetchall()
+
+# Extract data into lists
+# names = [row[0] for row in rows]
+# ages = [row[1] for row in rows]
+
+# conn.close()
+
+# Create bar plot using Matplotlib
+# plt.figure(figsize=(8, 6))
+# plt.bar(names, ages, color='skyblue')
+# plt.xlabel('Name')
+# plt.ylabel('Age')
+# plt.title('Age Distribution of Users')
+# plt.grid(axis='y', linestyle='--', alpha=0.7)
+# plt.tight_layout()
+# plt.show()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ 3D array """
+# a = np.array([[[1, 2, 3, 4, 5], 
+#               [5, 4, 3, 2, 1], 
+#               [1, 2, 3, 2, 1]],
+              
+#               [[13, 21, 31, 41, 5],
+#               [21, 12, 3, 5, 4],
+#               [55, 66, 77, 88, 99]]])
+
+# print(a)
+# print(a.shape)
+# print(a.dtype)
+
+# b = a + 1
+# c = a * 2
+# d = np.sqrt(a)
+# e = np.sum(a)
+
+# print(b)
+# print(c)
+# print(d)
+# print(e)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Data encryption """
+
+# key = Fernet.generate_key()
+
+# cipher = Fernet(key)
+
+# data = b'some plain text data'
+# encrypted_data = cipher.encrypt(data)
+
+# print(encrypted_data)
+
+# decrypted_data = cipher.decrypt(encrypted_data)
+
+# print(decrypted_data)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
