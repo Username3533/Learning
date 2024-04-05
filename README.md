@@ -60,3 +60,4 @@ Learning to code. :)
 - Client Server Architechture
 - Database Interaction/Programming
 - Data extraction from websites
+- Markov chains
