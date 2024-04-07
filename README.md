@@ -62,3 +62,4 @@ Learning to code. :)
 - Data extraction from websites
 - Markov chains
 - Flask framework
+- Multithreading
