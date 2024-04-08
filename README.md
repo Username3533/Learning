@@ -63,3 +63,4 @@ Learning to code. :)
 - Markov chains
 - Flask framework
 - Multithreading
+- Latent Dirichlet Allocation
