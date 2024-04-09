@@ -35,7 +35,7 @@ import array
 import asyncio
 import argparse
 import sqlite3
-import pandas
+import pandas as pd
 import numpy as np
 from cryptography.fernet import Fernet
 from selenium import webdriver
@@ -258,4 +258,27 @@ from keras.utils import to_categorical
 # print(decrypted_data)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Data manipulation - numpy/pandas """
+
+# arr = np.array([[1, 2], 
+#                 [3, 4], 
+#                 [5, 6]])
+
+# print(arr)
+# print(arr.shape)
+
+# print(np.mean(arr))
+# print(np.std(arr))
+
+# df = pd.DataFrame({'name': ['Alice', 'Bob', 'Charlie'], 'age': [25, 30, 35], 'gender': ['F', 'M', 'M']})
+
+# print(df)
+# df_filtered = df[df['age'] >= 30]
+
+# print(df_filtered)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+""" Data prep/Model training/Prediction - scikit """
 
