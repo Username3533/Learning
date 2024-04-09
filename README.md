@@ -29,7 +29,7 @@ Learning to code. :)
 - Pandas
 - NumPy
 - Data encryption/manipulation/visualization
-- Deep learning
+- Deep learning - Keras
 - HTML/HTTP parsing/nav/routing
 - Json parsing
 - DataFrames
@@ -38,6 +38,7 @@ Learning to code. :)
 - ML/Natural language processing
 - Object mapping SQL
 - CSV files
+- Scikit - learn
 - APIs/HTTP requests
 - Server-client architecture
 - SMTP servers/email auth
