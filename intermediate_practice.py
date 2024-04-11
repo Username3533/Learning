@@ -37,6 +37,11 @@ import argparse
 import sqlite3
 import pandas as pd
 import numpy as np
+import smtplib
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
 from cryptography.fernet import Fernet
 from selenium import webdriver
 from keras.models import Sequential
@@ -280,5 +285,79 @@ from keras.utils import to_categorical
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-""" Data prep/Model training/Prediction - scikit """
+# """ Data prep/Model training/Prediction - scikit """
+
+# iris = load_iris()
+
+# X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3, random_state=42)
+
+# clf = DecisionTreeClassifier()
+# clf.fit(X_train, y_train)
+
+# new_data = [[5.1, 3.5, 1.4, 0.2], [6.2, 2.9, 4.3, 1.3], [7.7, 3.8, 6.7, 2.2]]
+# new_predictions = clf.predict(new_data)
+
+# print('New data:', new_data)
+# print('New predictions:', new_predictions)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Deep Learning using Keras """
+
+
+# iris = load_iris()
+
+# X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3, random_state=42)
+
+# y_train = to_categorical(y_train)
+# y_test = to_categorical(y_test)
+
+# model = Sequential()
+# model.add(Dense(units=10, activation='relu', input_dim=4))
+# model.add(Dense(units=3, activation='softmax'))
+
+# sgd = SGD(learning_rate=0.01)
+# model.compile(optimizer=sgd, loss='categorical_crossentropy', metrics=['accuracy'])
+
+# model.fit(X_train, y_train, epochs=100, batch_size=32)
+
+# loss, accuracy = model.evaluate(X_test, y_test)
+
+# print('Loss:', loss)
+# print('Accuracy:', accuracy)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Send email using SMTP and TLS encryption """
+
+# subject = 'Test email'
+# body = 'this is a test email'
+# sender_email = 'test@hotmail.com'
+# receiver_email = 'test@gmail.com'
+# message = f'Subject: {subject}\n\n{body}'
+
+# smtp_server = smtplib.SMTP('smtp.gmail.com', 587)
+
+# smtp_server.starttls()
+
+# smtp_server.login(sender_email, 'password')
+
+# smtp_server.sendmail(sender_email, receiver_email, message)
+
+# smtp_server.quit()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Event loop """
+
+# async def say_hello():
+#     print('Hello')
+#     await asyncio.sleep(1)
+#     print('World')
+
+# loop = asyncio.get_event_loop()
+# loop.run_until_complete(say_hello())
+# loop.close()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
