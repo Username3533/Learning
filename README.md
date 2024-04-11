@@ -65,3 +65,4 @@ Learning to code. :)
 - Flask framework
 - Multithreading
 - Latent Dirichlet Allocation
+- Object detection
