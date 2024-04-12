@@ -66,3 +66,4 @@ Learning to code. :)
 - Multithreading
 - Latent Dirichlet Allocation
 - Object detection
+- Remote method invocation
