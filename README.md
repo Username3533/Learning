@@ -67,3 +67,4 @@ Learning to code. :)
 - Latent Dirichlet Allocation
 - Object detection
 - Remote method invocation
+- Natural language generation
