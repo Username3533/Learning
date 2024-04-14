@@ -68,3 +68,4 @@ Learning to code. :)
 - Object detection
 - Remote method invocation
 - Natural language generation
+- Q-Learning
