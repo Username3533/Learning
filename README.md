@@ -69,3 +69,4 @@ Learning to code. :)
 - Remote method invocation
 - Natural language generation
 - Q-Learning
+- Reinforcement learning
