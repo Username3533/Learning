@@ -70,3 +70,4 @@ Learning to code. :)
 - Natural language generation
 - Q-Learning
 - Reinforcement learning
+- Stream processing
