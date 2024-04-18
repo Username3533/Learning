@@ -52,6 +52,7 @@ Learning to code. :)
 - Scikit-Learn
 - ARIMA model
 - File Parsing
+- Aggregation
 - HTML Parsing
 - Computer Vision
 - CSV file I/O
