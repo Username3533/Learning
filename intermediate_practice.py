@@ -34,10 +34,15 @@ Webscraping
 import array
 import asyncio
 import argparse
+import requests
 import sqlite3
 import pandas as pd
 import numpy as np
+import tkinter as tk
 import smtplib
+from bs4 import BeautifulSoup
+from PIL import Image
+from flask import Flask, request
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -49,6 +54,7 @@ from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from keras.optimizers import SGD
 from keras.datasets import mnist
 from keras.utils import to_categorical
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 
 
 
@@ -358,6 +364,128 @@ from keras.utils import to_categorical
 # loop = asyncio.get_event_loop()
 # loop.run_until_complete(say_hello())
 # loop.close()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Widnow using Tkinter """
+
+# window = tk.Tk()
+
+# label = tk.Label(window, text='Hello, Tkinter!')
+
+# label.pack()
+
+# window.mainloop()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ PyQt window """
+
+# app = QApplication([])
+
+# widget = QWidget()
+# layout = QVBoxLayout()
+# label = QLabel('Hello, World!')
+# layout.addWidget(label)
+# widget.setLayout(layout)
+# widget.show()
+
+# app.exec_()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ HTML Parsing using soup """
+
+# html = """
+# <html>
+#     <head>
+#         <title>My Page</title>
+#     </head>
+#     <body>
+#         <h1>Welcome to my page!</h1>
+#         <p>This is some text.</p>
+#         <ul>
+#             <li>Item 1</li>
+#             <li>Item 3</li>
+#             <li>Item 2</li>
+#         </ul>
+#     </body>
+# </html>
+# """
+
+# soup = BeautifulSoup(html, 'html.parser')
+
+# title = soup.title
+
+# h1 = soup.h1
+
+# li = soup.li
+
+# lis = soup.find_all('li')
+
+# print(title.text)
+# print(h1.text)
+# print(li.text)
+# for li in lis:
+#     print(li.text)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Soup """
+# html = '<html><body><h1>Hello, World!</h1></body></html>'
+# soup = BeautifulSoup(html, 'html.parser')
+
+# with open('example.html') as f:
+#     soup = BeautifulSoup(f, 'html.parser')
+
+# h1_element = soup.find('h1')
+# text = h1_element.text
+# print(text)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# app = Flask(__name__)
+
+# @app.route('/', methods=['GET', 'POST'])
+# def index():
+#     if request.method == 'GET':
+#         return 'This is a GET request'
+#     elif request.method == 'POST':
+#         return 'This is a POST request'
+    
+# if __name__ == '__main__':
+#     app.run()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# response = requests.get('https://www.google.com')
+# html_cotntent = response.text
+
+# print(html_cotntent)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Pillow Lib """
+
+# """ Crop """
+# image = Image.open('image.jpg')
+# image = image.crop((100, 100, 300, 300))
+# image.save('image_cropped.jpg')
+
+# """ Rotate """
+# image = Image.open('image.jpg')
+# image = image.rotate(45)
+# image.save('image_rotated.jpg')
+
+# """ Change format """
+# image = Image.open('image.jpg')
+# image.save('image.png')
+
+# """ Resize """
+# image = Image.resize((500, 500))
+
+# """ Grayscale """
+# image = Image.convert('L')
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
