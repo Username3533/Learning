@@ -73,3 +73,5 @@ Learning to code. :)
 - Reinforcement learning
 - Stream processing
 - Network analysis
+- Computer Vision
+- 
