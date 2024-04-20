@@ -74,4 +74,4 @@ Learning to code. :)
 - Stream processing
 - Network analysis
 - Computer Vision
-- 
+- Stemming
