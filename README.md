@@ -75,3 +75,4 @@ Learning to code. :)
 - Network analysis
 - Computer Vision
 - Stemming
+- Latent Dirichlet Allocation
