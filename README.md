@@ -76,3 +76,4 @@ Learning to code. :)
 - Computer Vision
 - Stemming
 - Latent Dirichlet Allocation
+- Support Vector Machines
