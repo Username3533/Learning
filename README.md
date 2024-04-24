@@ -77,3 +77,4 @@ Learning to code. :)
 - Stemming
 - Latent Dirichlet Allocation
 - Support Vector Machines
+- Remote Method Invocation
