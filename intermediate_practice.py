@@ -36,6 +36,7 @@ import asyncio
 import argparse
 import requests
 import sqlite3
+import json
 import pandas as pd
 import numpy as np
 import tkinter as tk
@@ -486,6 +487,25 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 
 # """ Grayscale """
 # image = Image.convert('L')
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Parsing using json.loads() """
+# json_string = '{"name": "John", "age": "30", "city": "New York"}'
+# data = json.loads(json_string)
+
+# print(data['name'])
+# print(data['age'])
+# print(data['city'])
+
+
+# """ Generate JSON string from Python dictionary using json.dumps() """
+# data = {"name": "John",
+#         "age": "30",
+#         "city": "New York"}
+
+# json_string = json.dumps(data)
+# print(json_string)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
