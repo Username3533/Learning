@@ -79,3 +79,4 @@ Learning to code. :)
 - Support Vector Machines
 - Remote Method Invocation\
 - Image Segmentation - Scikit-image
+- Sentiment Analysis
