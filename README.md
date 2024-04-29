@@ -80,3 +80,4 @@ Learning to code. :)
 - Remote Method Invocation\
 - Image Segmentation - Scikit-image
 - Sentiment Analysis
+- SQL
