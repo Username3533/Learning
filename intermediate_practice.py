@@ -37,9 +37,11 @@ import argparse
 import requests
 import sqlite3
 import json
+import logging
 import pandas as pd
 import numpy as np
 import tkinter as tk
+import matplotlib.pyplot as plt
 import smtplib
 from bs4 import BeautifulSoup
 from PIL import Image
@@ -506,6 +508,60 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 
 # json_string = json.dumps(data)
 # print(json_string)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Line plots """
+
+# x = [1, 2, 3, 4, 5]
+# y = [10, 8, 6, 4, 2]
+
+# fig, ax = plt.subplots()
+
+# ax.plot(x, y, label='My line plot')
+
+# ax.set_xlabel('X axis')
+# ax.set_ylabel('Y axis')
+# ax.set_title('My plot')
+# ax.legend()
+
+# plt.show()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+""" Pandas DF loaded from CSV """
+
+# # Load data
+# df = pd.read('data.csv')
+
+# print(df.head())
+
+# # filter data in column A
+# filtered = df[df['A'] > 10]
+
+# # calc mean of column B and C
+# grouped = df.groupby('B')['C'].mean()
+
+# # sort A in descending order
+# sorted = df.sort_values('A', ascending=False)
+
+# #save modified data to csv
+
+# filtered.to_csv('filtered.csv')
+# grouped.to_csv('grouped.csv')
+# sorted.to_csv('soretd.csv')
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Logging """
+
+# logging.basicConfig(filename='example.log', level=logging.DEBUG)
+
+# logging.debug('Debug message')
+# logging.info('Info message')
+# logging.warning('Warning message')
+# logging.error('Error message')
+# logging.critical('Critical message')
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
