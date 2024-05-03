@@ -82,3 +82,4 @@ Learning to code. :)
 - Sentiment Analysis
 - SQL
 - TCP/IP Protocol
+- Tokenization
