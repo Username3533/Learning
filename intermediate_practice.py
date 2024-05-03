@@ -43,6 +43,11 @@ import numpy as np
 import tkinter as tk
 import matplotlib.pyplot as plt
 import smtplib
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from nltk.sentiment import SentimentIntensityAnalyzer
 from bs4 import BeautifulSoup
 from PIL import Image
 from flask import Flask, request
@@ -529,7 +534,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-""" Pandas DF loaded from CSV """
+# """ Pandas DF loaded from CSV """
 
 # # Load data
 # df = pd.read('data.csv')
@@ -585,3 +590,39 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 # print('Accuracy:', accuracy)
 
 # """ Accuracy results 1.0, probliem wit overfitting...probably """
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Natural Language proccessing using NLTK """
+
+# nltk.download('punkt')
+# nltk.download('stopwords')
+# nltk.download('wordnet')
+# nltk.download('vader_lexicon')
+
+# text = 'Learning python is awesome!.'
+
+# #tokenize
+# tokens = word_tokenize(text)
+
+# #remove stopwords
+# stop_words = set(stopwords.words('english'))
+# filtered_tokens = [word for word in tokens if word.lower() not in stop_words]
+
+# #Lemmatize filtered tokens
+# lemmatizer = WordNetLemmatizer()
+# lemmatized_toekns = [lemmatizer.lemmatize(word) for word in filtered_tokens]
+
+# #sentiment analysis
+# analyzer = SentimentIntensityAnalyzer()
+# scores = analyzer.polarity_scores(text)
+
+# #results
+# print('Original text:', text)
+# print('Tokenized text:', tokens)
+# print('Filtered text:', filtered_tokens)
+# print('Lemmatized text:', lemmatized_toekns)
+# print('Sentiment scores:', scores)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
