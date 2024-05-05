@@ -35,6 +35,7 @@ import array
 import asyncio
 import argparse
 import requests
+import re
 import sqlite3
 import json
 import logging
@@ -44,6 +45,9 @@ import tkinter as tk
 import matplotlib.pyplot as plt
 import smtplib
 import nltk
+from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
@@ -639,3 +643,41 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 # p = Person('John', 30)
 # p.say_hello()
 
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Object relational mapping using SQLAlchemy """
+
+# # Create database engine and session
+# engine = create_engine('sqlite:///example.db')
+# Session = sessionmaker(bind=engine)
+# session = Session()
+
+# # Define database table
+# Base = declarative_base()
+# class User(Base):
+#     __tablename__ = 'users'
+#     id = Column(Integer, primary_key=True)
+#     name = Column(String)
+#     email = Column(String)
+
+# # Create database table
+# Base.metadata.create_all(engine)
+
+# # Add info to database
+# user1 = User(name='John', email='john@example.com')
+# user2 = User(name='Jane', email='jane@example.com')
+# session.add(user1)
+# session.add(user2)
+# session.commit()
+
+# users = session.query(User).all()
+# for user in users:
+#     print(user.name, user.email)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+""" Pattern matching/substitution """
+
+string = 'My email is john@example.com and my friend\'s email is jane@example.com.'
+redacted = re.sub(r'\b[\w.-]+@[\w.-]+\.[\w.-]+\b', 'redacted', string)
+print(redacted)
