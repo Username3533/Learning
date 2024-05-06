@@ -50,6 +50,7 @@ Learning to code. :)
 
 # Advanced Concepts
 - Scikit-Learn
+- Scikit-image
 - ARIMA model
 - File Parsing
 - Aggregation
@@ -78,7 +79,7 @@ Learning to code. :)
 - Latent Dirichlet Allocation
 - Support Vector Machines
 - Remote Method Invocation\
-- Image Segmentation - Scikit-image
+- Image Segmentation
 - Sentiment Analysis
 - SQL
 - TCP/IP Protocol
