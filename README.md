@@ -85,3 +85,4 @@ Learning to code. :)
 - TCP/IP Protocol
 - Tokenization
 - Grid Search
+- Linear Regression
