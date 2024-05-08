@@ -37,12 +37,14 @@ import argparse
 import requests
 import re
 import sqlite3
+import csv
 import json
 import logging
 import pandas as pd
 import numpy as np
 import tkinter as tk
 import matplotlib.pyplot as plt
+import os
 import smtplib
 import nltk
 from sqlalchemy import create_engine, Column, Integer, String
@@ -676,8 +678,56 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-""" Pattern matching/substitution """
+# """ Pattern matching/substitution """
 
-string = 'My email is john@example.com and my friend\'s email is jane@example.com.'
-redacted = re.sub(r'\b[\w.-]+@[\w.-]+\.[\w.-]+\b', 'redacted', string)
-print(redacted)
+# string = 'My email is john@example.com and my friend\'s email is jane@example.com.'
+# redacted = re.sub(r'\b[\w.-]+@[\w.-]+\.[\w.-]+\b', 'redacted', string)
+# print(redacted)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Data querying SQL """
+
+# conn = sqlite3.connect('example.db')
+
+# c = conn.cursor()
+
+# c.execute("SELECT * FROM users")
+# rows = c.fetchall()
+# for row in rows:
+#     print(row)
+
+# conn.close()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ CSV data filtering creating a list of dictionaries """
+
+# with open('data.csv', 'r') as f:
+#     reader = csv.DictReader(f)
+#     data = [row for row in reader if row['score'] > '90']
+
+# for row in data:
+#     print(row['name'], row['score'])
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Write to a text file """
+
+# with open('file.txt', 'a') as file:
+#     file.write('Hello, again!')
+
+
+# with open('new_file.txt', 'w') as f:
+#     f.write('This is a new file!')
+
+# with open('new_file.txt', 'r') as f:
+#     content = f.read()
+
+# with open('new_file.txt', 'w') as f:
+#     f.write('HeEEEELLLLLLLLLLOOOOOOOOOOO!!!!!')
+
+# os.remove('new_file.txt')
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
