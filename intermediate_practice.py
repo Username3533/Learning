@@ -44,6 +44,7 @@ import pandas as pd
 import numpy as np
 import tkinter as tk
 import matplotlib.pyplot as plt
+import requests
 import os
 import smtplib
 import nltk
@@ -56,7 +57,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.sentiment import SentimentIntensityAnalyzer
 from bs4 import BeautifulSoup
 from PIL import Image
-from flask import Flask, request
+from flask import Flask, jsonify, request
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -714,20 +715,106 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 
 # """ Write to a text file """
 
-# with open('file.txt', 'a') as file:
-#     file.write('Hello, again!')
-
 
 # with open('new_file.txt', 'w') as f:
 #     f.write('This is a new file!')
 
-# with open('new_file.txt', 'r') as f:
-#     content = f.read()
+# with open('new_file.txt', 'a') as file:
+#     file.write('Hello, again!')
 
 # with open('new_file.txt', 'w') as f:
 #     f.write('HeEEEELLLLLLLLLLOOOOOOOOOOO!!!!!')
 
+# with open('new_file.txt', 'r') as f:
+#     content = f.read()
+
 # os.remove('new_file.txt')
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Read Data from CSV using Pandas """
+
+# df = pd.read_csv('data.csv')
+
+# first_few_rows = df.head()
+
+# column_mean = df['column_name'].mean()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ re - matching/replaceing """
+
+# string = 'The Cat in the Hat'
+# match = re.search('cat', string.lower())
+# if match:
+#     print('Match found:', match.group(0))
+
+# new_string = re.sub('cat', 'dog', string.lower())
+# print('New String:', new_string.title())
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ RESTful API/Flask framework """
+
+# response = requests.get('https://api.example.com/resource')
+# data = response.json()
+
+# app = Flask(__name__)
+
+# users = [
+#     {'id': 1, 'name': 'john', 'email': 'john.example.com'}
+#     {'id': 2, 'name': 'jane', 'email': 'jane.example.com'}
+#     {'id': 3, 'name': 'bob', 'email': 'bob.example.com'}
+# ]
+
+# @app.route('/users', method=['GET'])
+# def get_users():
+#     return jsonify(users)
+
+# @app.route('/users/<int:user_id>', method=['GET'])
+# def get_user(user_id):
+#     for user in users:
+#         if user['id'] == user_id:
+#             return jsonify(user)
+#     return jsonify({'error': 'User not found'})
+
+# @app.route('/users', methods=['POST'])
+# def create_user():
+#     user = request.json
+#     user['id'] = len(users) + 1
+#     users.append(user)
+#     return jsonify(user)
+
+# @app.route('/users/<int:user_id>', methods=['PUT'])
+# def update_user():
+#     user = request.json
+#     for i, u in enumerate(users):
+#         if u['id'] == user_id:
+#             users[i] = user
+#             return jsonify(user)
+#     return jsonify({'error': 'User not found'})
+
+# @app.route('/users/<int:user_id', methods=['DELETE'])
+# def delete_user(user_id):
+#     for i, user in enumerate(users):
+#         if user['id']:
+#             del users[i]
+#             return jsonify('message': 'User deleted')
+#     return jsonify({'error': 'User not found'})
+
+# if __name__ == '__main__':
+#     app.run()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ String patterns """
+
+# pattern = r'\d+'
+
+# text = 'There are 123 apples and 456 oranges.'
+# matches = re.findall(pattern, text)
+
+# print(matches)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
