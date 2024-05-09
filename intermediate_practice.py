@@ -46,14 +46,16 @@ import tkinter as tk
 import matplotlib.pyplot as plt
 import requests
 import os
+import socket
 import smtplib
 import nltk
+from nltk import pos_tag
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
+from nltk.stem import WordNetLemmatizer, SnowballStemmer
 from nltk.sentiment import SentimentIntensityAnalyzer
 from bs4 import BeautifulSoup
 from PIL import Image
@@ -815,6 +817,83 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 # matches = re.findall(pattern, text)
 
 # print(matches)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Server Client architecture """
+
+# serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# host = socket.gethostname()
+# port = 9999
+
+# serversocket.bind((host, port))
+
+# serversocket.listen(1)
+
+# clientsocket, address = serversocket.accept()
+
+# clientsocket.send('Hello Client!'.encode())
+
+# clientsocket.close()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Connect to server """
+
+# host = socket.gethostname()
+# port = 9999
+
+# serversocket.connect((host, port))
+
+# data = clientsocket.recv(1024)
+
+# print(data.decode())
+
+# clientsocket.close()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# s= socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# host = socket.gethostbyname()
+
+# port = 12345
+
+# s.bind((host, port))
+
+# s.listen(5)
+
+# client_socket, client_address = s.accept()
+# print('Got connection from', client_address)
+
+# message = 'Thank you for connecting'
+# client_socket.send(message.encode())
+
+# client_socket.close()
+
+# s.close()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Tokenization, stemming, POS tags """
+
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
+
+# text = 'The quick brown foxes jumped over the lazy dogs.'
+
+# tokens = word_tokenize(text)
+
+# stemmer = SnowballStemmer('english')
+# stemmed_tokens = [stemmer.stem(word) for word in tokens]
+
+# pos_tags = pos_tag(tokens)
+
+# print('Original text:', text)
+# print('Tokenized text:', tokens)
+# print('Stemmed text:', stemmed_tokens)
+# print('POS tags:', pos_tags)
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
