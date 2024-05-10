@@ -59,7 +59,7 @@ from nltk.stem import WordNetLemmatizer, SnowballStemmer
 from nltk.sentiment import SentimentIntensityAnalyzer
 from bs4 import BeautifulSoup
 from PIL import Image
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -894,6 +894,94 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 # print('Tokenized text:', tokens)
 # print('Stemmed text:', stemmed_tokens)
 # print('POS tags:', pos_tags)
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ API with Flask """
+
+# app = Flask(__name__)
+
+# @app.route('/')
+# def hello():
+#     return 'Hello, World!'
+
+# @app.route('/api/data')
+# def data():
+#     data = {'name': 'john', 'age': 30, 'city': 'San Diego'}
+#     return jsonify(data)
+
+# if __name__ == '__main__':
+#     app.run()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Flask Web Dev """
+
+# app = Flask(__name__)
+
+# @app.route('/')
+# def hello_world():
+#     return 'Hello, World!'
+
+# @app.route('/about')
+# def about():
+#     return render_template('about.html')
+
+# if __name__ == '__main__':
+#     app.run()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# """ Beautiful Soup web scraping """
+
+# response = requests.get('https://www.example.com')
+
+# soup = BeautifulSoup(response.content, 'html.parser')
+
+# links = soup.find_all('a')
+
+# for link in links:
+#     print(link.get('href'))
+
+
+
+# def get_robots_txt(url):
+#     robots_url = f"{url}/robots.txt"
+#     response = requests.get(robots_url)
+#     if response.status_code == 200:
+#         return response.text
+#     else:
+#         return f"Failed to fetch robots.txt: {response.status_code}"
+
+# website_url = 'https://www.bodybuilding.com'
+# robots_txt = get_robots_txt(website_url)
+# print(robots_txt)
+
+
+# response = requests.get('https://www.example.com')
+
+# # Check if the request was successful (status code 200)
+# if response.status_code == 200:
+#     soup = BeautifulSoup(response.content, 'html.parser')
+#     links = soup.find_all('a')
+#     for link in links:
+#         print(link.get('href'))
+# else:
+#     print(f"Failed to fetch webpage: {response.status_code}")
+
+
+# url = 'https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)'
+# response = requests.get(url)
+# html = response.content
+
+# soup = BeautifulSoup(html, 'html.parser')
+
+# table = soup.find('table', {'class': 'wikitable sortable'})
+# rows = table.findAll('tr')
+# for row in rows:
+#     cols = row.findAll('td')
+#     for col in cols:
+#         print(col.text.strip())
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
