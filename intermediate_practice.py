@@ -985,3 +985,12 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
+""" Web scraping with Selenium """
+
+driver = webdriver.Chrome()
+driver.get('https://www.bodybuilding.com')
+
+driver.implicitly_wait(10)
+
+element = driver.find_element_by_css_selector('#header')
+print(element.get_attribute('textContent'))
