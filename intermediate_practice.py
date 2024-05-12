@@ -988,7 +988,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 """ Web scraping with Selenium """
 
 driver = webdriver.Chrome()
-driver.get('https://www.bodybuilding.com')
+driver.get('https://www.example.com')
 
 driver.implicitly_wait(10)
 
