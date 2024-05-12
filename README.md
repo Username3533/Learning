@@ -34,7 +34,7 @@ Learning to code. :)
 - Json parsing
 - DataFrames
 - Log levels
-- Logging
+- Logging data
 - ML/Natural language processing
 - Object mapping SQL
 - CSV files
