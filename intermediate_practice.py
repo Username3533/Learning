@@ -985,12 +985,40 @@ from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-""" Web scraping with Selenium """
+# """ Web scraping with Selenium """
 
-driver = webdriver.Chrome()
-driver.get('https://www.example.com')
+# driver = webdriver.Chrome()
+# driver.get('https://www.example.com')
 
-driver.implicitly_wait(10)
+# driver.implicitly_wait(10)
 
-element = driver.find_element_by_css_selector('#header')
-print(element.get_attribute('textContent'))
+# element = driver.find_element_by_css_selector('#header')
+# print(element.text)
+
+# button = driver.find_element_by_css_selector('#load-more')
+# button.click()
+
+# driver.implicitly_wait(10)
+
+# elements = driver.find_element_by_css_selector('.item')
+# for element in elements:
+#     print(element.text)
+
+# driver.quit()
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+# def on_button_click():
+#     label.config(text='Button clicked!')
+
+# window = tk.Tk()
+
+# label = tk.Label(window, text='Hello, Tkinter!')
+
+# label.pack()
+
+# button = tk.Button(window, text='Click me!', command=on_button_click)
+
+# button.pack()
+
+# window.mainloop()
