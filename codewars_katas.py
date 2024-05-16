@@ -62,3 +62,18 @@
 
 # text='screw you guys im going home !'
 # print(pig_it(text))
+
+def highest_scoring_word(s):
+    max_score = 0
+    max_word = ''
+
+    for word in s.split():
+        score = sum(ord(char) - ord('a') + 1 for char in word)
+        if score > max_score:
+            max_score = score
+            max_word = word
+
+    return max_word
+
+s = 'How much wood could a wood chuck chuck if a wood chuck could chuck wood?'
+print(highest_scoring_word(s))
