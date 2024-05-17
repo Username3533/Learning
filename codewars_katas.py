@@ -63,17 +63,21 @@
 # text='screw you guys im going home !'
 # print(pig_it(text))
 
-def highest_scoring_word(s):
-    max_score = 0
-    max_word = ''
+message = 'aBcdefghIjklmnopQustuvwxyz'
 
-    for word in s.split():
-        score = sum(ord(char) - ord('a') + 1 for char in word)
-        if score > max_score:
-            max_score = score
-            max_word = word
+# print([ord(char) for char in string.lower()])
 
-    return max_word
-
-s = 'How much wood could a wood chuck chuck if a wood chuck could chuck wood?'
-print(highest_scoring_word(s))
+def decode_rot13(m2):
+    decoded_chars = []
+    for char in m2:
+        decoded = ord(char) + 13
+        if char.islower():
+            if decoded > ord('z'):
+                decoded -= 26
+        elif char.isupper():
+            if decoded > ord('Z'):
+                decoded -= 26
+        else:
+            decoded = ord(char)
+        decoded_chars.append(chr(decoded))
+    return ''.join(decoded_chars)
