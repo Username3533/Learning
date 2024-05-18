@@ -63,21 +63,61 @@
 # text='screw you guys im going home !'
 # print(pig_it(text))
 
-message = 'aBcdefghIjklmnopQustuvwxyz'
+# message = 'aBcdefghIjklmnopQustuvwxyz'
 
-# print([ord(char) for char in string.lower()])
+# # print([ord(char) for char in string.lower()])
 
-def decode_rot13(m2):
-    decoded_chars = []
-    for char in m2:
-        decoded = ord(char) + 13
-        if char.islower():
-            if decoded > ord('z'):
-                decoded -= 26
-        elif char.isupper():
-            if decoded > ord('Z'):
-                decoded -= 26
-        else:
-            decoded = ord(char)
-        decoded_chars.append(chr(decoded))
-    return ''.join(decoded_chars)
+# def decode_rot13(m2):
+#     decoded_chars = []
+#     for char in m2:
+#         decoded = ord(char) + 13
+#         if char.islower():
+#             if decoded > ord('z'):
+#                 decoded -= 26
+#         elif char.isupper():
+#             if decoded > ord('Z'):
+#                 decoded -= 26
+#         else:
+#             decoded = ord(char)
+#         decoded_chars.append(chr(decoded))
+#     return ''.join(decoded_chars)
+
+""" Pin brute force """
+
+#1357 is the combo
+#1 can be also 2 or 4
+#3 can also be 2 or 6
+#5 can also be 2 4 6 or 8
+#7 can also be 4 or 8
+#135 possible combos
+
+# A = ['1', '2', '4']
+# B = ['3', '2', '6']
+# C = ['5', '2', '4', '6', '8']
+# D = ['7', '4', '8']
+
+# def generate_combinations(lst, current='', depth=0):
+#     if depth == 4:
+#         if 1 <= len(current) <= 8:
+#             print(current)
+#         return
+#     for item in lst[depth]:
+#         generate_combinations(lst, current + item, depth + 1)
+#         if len(current + item) <= 8:
+#             generate_combinations(lst, current + item, depth)
+
+# generate_combinations([A, B, C, D])
+
+""" 
+1. Find all the prime factors present in the given array.
+2. For each prime factor, calculate the sum of all the array elements for which it is a prime factor.
+3. Construct the result array with each entry containing a prime factor and its corresponding sum. 
+"""
+
+for
+    for
+        if
+
+for
+    for
+        if
