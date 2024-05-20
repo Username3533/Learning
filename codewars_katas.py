@@ -114,10 +114,41 @@
 3. Construct the result array with each entry containing a prime factor and its corresponding sum. 
 """
 
-for
-    for
-        if
+num = [12, 15]
+factors = []
+for item in num:
+    for number in range(2, item):
+        if item % number == 0:
+            factors.append(number)
 
-for
-    for
-        if
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0  or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i+2) == 0:
+            return False
+        i += 6
+    return True
+
+for factor in factors[:]:
+    if not is_prime(factor):
+        factors.remove(factor)
+
+print(factors)
+
+def sum_by_prime_factors(arr):
+    prime_sum = {}
+    for number in arr:
+        for prime in is_prime(number):
+            if prime in prime_sum:
+                prime_sum[prime] += number
+            else:
+                prime_sum[prime] = number
+    return prime_sum
+
+sum_by_prime_factors()
