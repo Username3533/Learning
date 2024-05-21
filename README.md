@@ -15,7 +15,6 @@ Learning to code. :)
 - Variables
 - Modular functions
 
-
 # Intermediate Concepts
 - Async programming
 - Pandas
@@ -48,7 +47,6 @@ Learning to code. :)
 - POS tagging/Tokenization/Stemming
 - Flask framework, dev, integration and APIs
 - Webscraping
-
 
 # Advanced Concepts
 - Scikit-Learn
