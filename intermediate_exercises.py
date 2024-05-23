@@ -66,3 +66,48 @@
 
 
 
+# def avg(*args):
+#     nums = []
+#     for item in args:
+#         nums.append(item)
+
+#     avg = sum(nums) / len(nums)
+#     print(f'{avg:.2f}')
+
+# avg(2345, 123, 42134, 123, 4125, 6275)
+
+# string = 'How are you doing today?'
+# def check_chars(s):
+#     asdf = [ord(char) for char in s]
+
+#     for num in asdf[1:]:
+#         current = asdf[i]
+#         last = asdf[i-1]
+#         if current > last:
+#             chr(num).upper()
+#             print(num)
+#     print(asdf)
+#     # def fun(st):
+#     #     for char in st[1:]:
+#     #         if char.isalpha():
+#     #             ord(char)
+
+    
+    
+    
+
+# print(check_chars(string))
+
+
+# def make_readable(seconds):
+#     yy = seconds // ((24*3600) * 365)
+#     dd = seconds // (24*3600) % 365
+#     hh = seconds // 3600 % 24
+#     mm = seconds % 3600 // 60
+#     ss = seconds % 60
+#     print(f'{yy:02}:{dd:02}:{hh:02}:{mm:02}:{ss:02}')
+
+    
+# make_readable(1716463019)
+
+print([ord(str(num)) for num in range(0, 9)])
