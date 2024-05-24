@@ -110,4 +110,25 @@
     
 # make_readable(1716463019)
 
-print([ord(str(num)) for num in range(0, 9)])
+
+# def alnum(s):
+#     return s.isalnum()
+
+# def alpha_num(string):
+#     nums = [ord(str(num)) for num in range(0, 10)]
+#     letters = [ord(letter) for letter in 'abcdefghijklmnopqrstuvwxyz']
+#     valid = set(nums + letters)
+    
+
+#     ord_str = [ord(str(char)) for char in string.lower()]
+
+#     for char in ord_str:
+#         if char not in valid:
+#             return False        
+#     return True
+    
+# string = 'what1235'
+
+# print(alpha_num(string))
+
+
