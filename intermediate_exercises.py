@@ -65,70 +65,27 @@
 
 
 
+# """ Exercise 6: Classes/Objects, encapsulation, inheritance """
 
-# def avg(*args):
-#     nums = []
-#     for item in args:
-#         nums.append(item)
+# class Person:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
 
-#     avg = sum(nums) / len(nums)
-#     print(f'{avg:.2f}')
+#     def greet(self):
+#         print(f'Hello, my name is {self.name} and I am {self.age} years old.')
 
-# avg(2345, 123, 42134, 123, 4125, 6275)
+# class Student(Person):
+#     def __init__(self, name, age, major):
+#         super().__init__(name, age)
+#         self.major = major
 
-# string = 'How are you doing today?'
-# def check_chars(s):
-#     asdf = [ord(char) for char in s]
+#     def describe(self):
+#         print(f'I am a student majoring in {self.major}.')
 
-#     for num in asdf[1:]:
-#         current = asdf[i]
-#         last = asdf[i-1]
-#         if current > last:
-#             chr(num).upper()
-#             print(num)
-#     print(asdf)
-#     # def fun(st):
-#     #     for char in st[1:]:
-#     #         if char.isalpha():
-#     #             ord(char)
+# person = Person('Alice', 25)
+# person.greet()
 
-    
-    
-    
-
-# print(check_chars(string))
-
-
-# def make_readable(seconds):
-#     yy = seconds // ((24*3600) * 365)
-#     dd = seconds // (24*3600) % 365
-#     hh = seconds // 3600 % 24
-#     mm = seconds % 3600 // 60
-#     ss = seconds % 60
-#     print(f'{yy:02}:{dd:02}:{hh:02}:{mm:02}:{ss:02}')
-
-    
-# make_readable(1716463019)
-
-
-# def alnum(s):
-#     return s.isalnum()
-
-# def alpha_num(string):
-#     nums = [ord(str(num)) for num in range(0, 10)]
-#     letters = [ord(letter) for letter in 'abcdefghijklmnopqrstuvwxyz']
-#     valid = set(nums + letters)
-    
-
-#     ord_str = [ord(str(char)) for char in string.lower()]
-
-#     for char in ord_str:
-#         if char not in valid:
-#             return False        
-#     return True
-    
-# string = 'what1235'
-
-# print(alpha_num(string))
-
-
+# student = Student('Bob', 20, 'Computer Science')
+# student.greet()
+# student.describe()
