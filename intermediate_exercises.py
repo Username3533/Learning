@@ -89,3 +89,42 @@
 # student = Student('Bob', 20, 'Computer Science')
 # student.greet()
 # student.describe()
+
+
+# """ Exercise 7: Threading/Sync """
+
+# import threading
+
+# counter = 0
+# lock = threading.Lock()
+
+# def incrament():
+#     global counter
+#     with lock:
+#         counter += 1
+
+# threads = []
+# for i in range(10):
+#     t = threading.Thread(target=incrament)
+#     threads.append(t)
+#     t.start()
+
+# for t in threads:
+#     t.join()
+
+# print(f'The counter is {counter}.')
+
+# """ Exercise 8: unit testing """
+
+# import unittest
+
+# def is_palendrome(s):
+#     return s == s[::-1]
+
+# class TestPalindrome(unittest.TestCase):
+#     def test_is_palendrome(self):
+#         self.assertTrue(is_palendrome('racecar'))
+#         self.assertFalse(is_palendrome('hello'))
+
+# if __name__ == '__main__':
+#     unittest.main()
