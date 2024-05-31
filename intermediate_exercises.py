@@ -164,3 +164,33 @@
 #     print(f'{row[0]} - {row[1]} ({row[2]})')
 
 # conn.close()
+
+
+# """ Exercise 11: Networking """
+
+# #server side
+# import socket
+
+# server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# server_socket.bind(('localhost', 0000))
+# server_socket.listen(1)
+
+# while True:
+#     client_socket, address = server_socket.accept()
+#     data = client_socket.recv(1024)
+#     response = data.upper()
+#     client_socket.sendall(response)
+#     client_socket.close()
+
+# #client side
+# import socket
+
+# client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# client_socket.connect(('localhost', 0000))
+# client_socket.sendall(b'Hello, server!')
+# response = client_socket.recv(1024)
+# print(response)
+# client_socket.close()
+
+
+
