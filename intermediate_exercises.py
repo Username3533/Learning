@@ -145,6 +145,22 @@
 
 # plt.show()
 
+# """ Exercise 10: Data Ops """
 
+# import sqlite3
 
+# conn = sqlite3.connect('example.db')
 
+# conn.execute('''CREATE TABLE IF NOT EXISTS users
+#              (id INTEGER PRIMARY KEY,
+#              name TEXT,
+#              email TEXT)''')
+
+# conn.execute('INSERT INTO users (name, email) VALUES (?, ?)', ('Alice', 'alice@example.com'))
+# conn.execute('INSERT INTO users (name, email) VALUES (?, ?)', ('Bob', 'bob@example.com'))
+
+# cursor = conn.execute('SELECT id, name, email FROM users')
+# for row in cursor:
+#     print(f'{row[0]} - {row[1]} ({row[2]})')
+
+# conn.close()
