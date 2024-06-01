@@ -192,5 +192,19 @@
 # print(response)
 # client_socket.close()
 
+""" Exercise 12: Data Science """
 
+import numpy as np
+import pandas as pd
 
+data = {'x': np.arange(10),
+        'y': np.random.randn(10)}
+
+df = pd.DataFrame(data)
+
+print(df.mean())
+print(df.std())
+
+df['z'] = df['x'] * df['y']
+
+print(df)
