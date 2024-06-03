@@ -192,19 +192,22 @@
 # print(response)
 # client_socket.close()
 
-""" Exercise 12: Data Science """
+# """ Exercise 12: Data Science """
 
-import numpy as np
-import pandas as pd
+# import numpy as np
+# import pandas as pd
 
-data = {'x': np.arange(10),
-        'y': np.random.randn(10)}
+# data = {'x': np.arange(10),
+#         'y': np.random.randn(10)}
 
-df = pd.DataFrame(data)
+# df = pd.DataFrame(data)
 
-print(df.mean())
-print(df.std())
+# print('Df mean:', df.mean())
+# print('DF standar dev', df.std())
 
-df['z'] = df['x'] * df['y']
+# df['z'] = df['x'] * df['y']
 
-print(df)
+# print(df)
+
+
+
