@@ -1,6 +1,6 @@
 # Learning  
 
-Learning to code python for data science  :)
+Learning to code python for data science :)
 
 # Core Concepts  
 - basics = ['lists', 'tupels', 'dictionaries', 'loops', 'I/O', 'functions', 'classes', 'files', 'exceptions', 'unit tests']
