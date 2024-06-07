@@ -209,5 +209,17 @@
 
 # print(df)
 
+# """ Exercise 13: Image Processing """
 
+# from PIL import Image
 
+# image = Image.open('image.jpg')
+
+# print(image.format)
+# print(image.size)
+# print(image.mode)
+
+# grayscale_image = image.convert('L')
+# grayscale_image.show()
+
+# resized_image = image.resize((300, 300))
