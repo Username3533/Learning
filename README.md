@@ -3,6 +3,7 @@
 Learning to code python for data science :)  
 
 # Core Concepts  
+
 - basics = ['lists', 'tupels', 'dictionaries', 'loops', 'I/O', 'functions', 'classes', 'files', 'exceptions', 'unit tests']
 - Conditional statements
 - File I/O
@@ -15,7 +16,8 @@ Learning to code python for data science :)
 - Variables
 - Modular functions
 
-# Intermediate Concepts
+# Intermediate Concepts  
+
 - Async programming
 - Pandas
 - Browser automation, DOM manipulation
@@ -48,7 +50,8 @@ Learning to code python for data science :)
 - Flask framework, dev, integration and APIs
 - Webscraping
 
-# Advanced Concepts
+# Advanced Concepts  
+
 - Scikit-Learn
 - Scikit-image
 - ARIMA model
