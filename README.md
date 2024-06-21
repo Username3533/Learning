@@ -14,7 +14,7 @@ Learning to code python for data science :)
 - Slicing/String Manipulation
 - User inputs
 - Variables
-- Modular functions
+- Modular functions  
 
 # Intermediate Concepts  
 
