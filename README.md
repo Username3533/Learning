@@ -16,6 +16,7 @@ Learning to code python for data science :)
 - Variables
 - Modular functions  
 
+
 # Intermediate Concepts  
 
 - Async programming
