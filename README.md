@@ -16,7 +16,6 @@ Learning to code python for data science :)
 - Variables
 - Modular functions  
 
-
 # Intermediate Concepts  
 
 - Async programming
@@ -52,7 +51,6 @@ Learning to code python for data science :)
 - Webscraping
 
 # Advanced Concepts  
-
 
 - Scikit-Learn
 - Scikit-image
