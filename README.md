@@ -2,7 +2,7 @@
 
 Learning to code python for data science, machine learning and neural networks
 
-# Core Concepts  
+## Core Concepts  
 
 - basics = ['lists', 'tupels', 'dictionaries', 'loops', 'I/O', 'functions', 'classes', 'files', 'exceptions', 'unit tests']
 - Conditional statements
@@ -16,7 +16,7 @@ Learning to code python for data science, machine learning and neural networks
 - Variables
 - Modular functions  
 
-# Intermediate Concepts  
+## Intermediate Concepts  
 
 - Async programming
 - Pandas
@@ -50,7 +50,7 @@ Learning to code python for data science, machine learning and neural networks
 - Flask framework, dev, integration and APIs
 - Webscraping
 
-# Advanced Concepts  
+## Advanced Concepts  
 
 - Scikit-Learn
 - Scikit-image
