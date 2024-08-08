@@ -84,7 +84,7 @@ Learning to code python for data science, machine learning and neural networks
 - Remote Method Invocation\
 - Image Segmentation
 
-  
+
 - Sentiment Analysis
 - SQL
 - TCP/IP Protocol
