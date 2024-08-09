@@ -83,8 +83,6 @@ Learning to code python for data science, machine learning and neural networks
 - Support Vector Machines
 - Remote Method Invocation\
 - Image Segmentation
-
-
 - Sentiment Analysis
 - SQL
 - TCP/IP Protocol
