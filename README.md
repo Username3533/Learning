@@ -1,4 +1,4 @@
-# Learning  
+7# Learning  
 
 Learning to code python for data science, machine learning and neural networks
 
@@ -89,4 +89,3 @@ Learning to code python for data science, machine learning and neural networks
 - Tokenization
 - Grid Search
 - Linear Regression
-
