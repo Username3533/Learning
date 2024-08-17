@@ -1,4 +1,4 @@
-7# Learning  
+# Learning  
 
 Learning to code python for data science, machine learning and neural networks
 
