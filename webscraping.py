@@ -9,9 +9,6 @@ page = requests.get(url).text
 soup = BeautifulSoup(page, 'html.parser')
 
 
-
-
-
 soup.find_all("tbody")
 
 gme_revenue = pd.DataFrame(columns=['Date', 'Revenue'])
